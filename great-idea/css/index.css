@@ -331,6 +331,21 @@ nav a {
   text-decoration: none;
   color: grey;
   font-weight: bold;
+  padding: 0 2%;
+  border-radius: 5px;
+}
+.link:hover {
+  animation: link 0.5s 1 forwards;
+}
+@keyframes link {
+  0% {
+    transform: scale(1, 1);
+    color: darkgrey;
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+    color: darkgrey;
+  }
 }
 
 .logo {
@@ -362,9 +377,23 @@ h1 {
 button {
   width: 50%;
   margin: 0 auto;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background: white;
   border: 1px solid black;
+  border-radius: 15px;
+}
+
+button:hover {
+  animation: button 0.5s 1 forwards;
+}
+
+@keyframes button {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+  }
 }
 
 #code-image {
@@ -500,4 +529,82 @@ ul {
 
 li {
   line-height: 1.5;
+}
+
+/* ---FEATURES--- */
+
+#feature-header {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  margin-top: 12%;
+}
+#header-text {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: 5%;
+  text-align: center;
+  width: 50%;
+}
+
+#light {
+  width: 40%;
+  transform: rotate(15deg);
+  top: 20%;
+  margin-top: -10%;
+}
+
+/* --feature highlights-- */
+
+.feature-highlights {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: space-around;
+}
+
+.feature-left {
+  display: flex;
+  flex-flow: row;
+  width: 90%;
+  align-items: center;
+  margin-right: 10%;
+  padding: 10% 0;
+}
+
+.feature-text-left {
+  display: flex;
+  flex-flow: column wrap;
+  padding-right: 10%;
+}
+
+.feature-paragraph {
+  width: 100%;
+}
+
+.feature-img {
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.feature-img-left {
+  margin-left: 5%;
+}
+
+.feature-right {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  align-items: center;
+  width: 90%;
+  margin-left: 10%;
+}
+
+.feature-text-right {
+  display: flex;
+  flex-flow: column wrap;
+  padding-left: 10%;
+}
+
+.feature-img-right {
+  margin-right: 5%;
 }
